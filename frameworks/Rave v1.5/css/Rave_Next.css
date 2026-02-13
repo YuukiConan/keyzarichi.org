@@ -1405,7 +1405,7 @@ div {
     opacity: 0;
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     padding: 3em 0;
-    display: none;
+    display: block;
 }
 .section-header {
     margin: 3px 4% 20px 4%;
