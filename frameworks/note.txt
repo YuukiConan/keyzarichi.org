@@ -1,0 +1,11 @@
+========================================================
+                        CATATAN
+========================================================
+
+Rave
+Versi: 1.2-beta
+Tanggal revisi: 6 September 2025.
+Mencakup: 2 file CSS, 2 JS, 1 fetch JS, dan 1 Node.js.
+
+CATATAN:
+Gunakan framework ini dengan benar dan terstruktur agar dapat berfungsi dengan baik! Jika tidak, tampilan elemen akan beracak-acakan, tidak ditampilkan dengan benar, dan menimbulkan tumpang-tindih dengan elemen lainnya!

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/frameworks/Rave v1.5/css/Rave.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://cdn.lineicons.com/5.0/lineicons.css" onload="this.onload = null; this.rel='stylesheet';" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css"/>
+    <script type="module" defer src="/script.js" ></script>
+    <script defer type="module" src="/frameworks/Rave v1.5/js/Rave.js"></script>
+    <script>
+        let imgs = document.querySelectorAll('.inline-caption img');
+        imgs.forEach(img => {
+            img.setAttribute('loading', 'lazy');
+            
+        })
+        
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const articleTitles = document.querySelectorAll('.article-title');
+            articleTitles.forEach(articleTitle => {
+                const articleTitleText = articleTitle.textContent;
+                document.title = `${articleTitleText} - keyzarichi.org`;
+            })
+            function readTime() {
+                const text = document.getElementById('article').innerText;
+                const readTotal = document.querySelectorAll('.read-time');
+                const wpm = 225;
+                const words = text.trim().split(/\s+/).length;
+                const time = Math.ceil(words / wpm);
+                readTotal.forEach(readtime => {
+                    readtime.innerText = time + " menit"; 
+                });
+            }
+    
+            readTime();
+            const code_editors = document.querySelectorAll('.code-editor');
+    const line_numbers = document.querySelectorAll('.line-numbering')
+    code_editors.forEach(editor => {
+        const code = editor.value.split('\n').length;
+        line_numbers.forEach(line => {
+            line.innerHTML = '';
+
+            for (let i = 1; i <= code; i++) {
+                const span = document.createElement('span');
+                span.textContent = i;
+                line.appendChild(span);
+            }
+        })
+
+        editor.addEventListener('input', () => {
+            const code = editor.value.split('\n').length;
+            line_numbers.forEach(line => {
+                line.innerHTML = '';
+
+                for (let i = 1; i <= code; i++) {
+                    const span = document.createElement('span');
+                    span.textContent = i;
+                    line.appendChild(span);
+                }
+            })
+        })
+
+        editor.addEventListener('scroll', () => {
+            const scrollTop = editor.scrollTop;
+            line_numbers.forEach(line => {
+                line.scrollTop = scrollTop;
+            })
+        })
+
+        const copy_code = document.getElementById('copy-code');
+        const copy_icon = document.querySelector('.uil.uil-copy');
+        copy_code.addEventListener('click', () => {
+            const code = editor.value;
+            navigator.clipboard.writeText(code).then(() => {
+                copy_code.innerHTML = `<i class="uil uil-check"></i> Copied!`;
+                setTimeout(() => {
+                    copy_code.innerHTML = `<i class="uil uil-copy"></i> Copy`;
+                }, 5000)
+            })
+            return;
+        });
+    })
+        })
+
+    </script>
+</head>
+<body>
+    <header></header>
+    <main>
+        <article class="article" id="article">
+            <section class="title" style="background-image: url('/assets/image/banner/pexels-picjumbo-com-55570-196645\ \(1\).jpg');">
+                <section class="title-container">
+                    <div class="article-header">
+                        <div class="links"><a href="./index.html"><span data-lang="home">Beranda</span></a> > <a href="#"><span data-lang="articles">Artikel</span></a></div>
+                        <button class="btn category"><i class="uil uil-code-branch"></i>Pemrograman </button>
+                    </div>
+                    <h1 class="article-title">What's new in keyzarichi.org Beta 8?</h1>
+                    <div class="article-information">
+                        <button class="btn category"><i class="uil uil-clock"></i>Waktu membaca:<span class="read-time"></span></button>
+                        <button class="btn category"><i class="uil uil-user"></i>Author:<span class="author">YuukiC</span></button>
+                    </div>
+                </section>
+            </section>
+            <section class="content">
+                <div class="content-container">
+                    <div class="content-intro">
+                        <h1>Desain header baru</h1>
+                        <p>Link navigasi kini telah terpusat di tengah dan lebar kotak pencarian kini telah diringkas untuk memberikan pengalaman pengguna yang lebih baik.</p>
+                        <br><br><img class="article-image-container" src="" />
+                    </div>
+                    <div class="section-1">
+                        <h1>(Beta) Lokalisasi Bahasa</h1>
+                        <p>Apakah mesin terjemahan sering menerjemahkan teks secara tidak akurat? Lokalisasi Bahasa solusinya! Dengan adanya ini, keyzarichi.org mendukung 4 bahasa, yaitu <b>Bahasa Indonesia</b>, <b>Bahasa Inggris</b>, <b>Bahasa Jepang</b>, dan <b>Italia</b>. <br> <br> Untuk menggantinya, cukup tekan tombol hamburger di pojok kanan layar, dan pilih bahasa di pojok kanan panel navigasi. <br><br><img class="article-image-container" src="" /> </p>
+                        
+                    </div>
+                    <div class="ad rect-ad">
+                        <img src="" />
+                    </div>
+                    <div class="section-2">
+                        <h1>Memperkenalkan, editor kode yang baru!</h1>
+                        <p>Haha <br><br>
+                            <div class="code-editor-container playable">
+                                <div class="code-editor-header">
+                                    <h2>Editor teks</h2>
+                                    <h2 class="project-lang">txt</h2>
+                                    <div class="tab">
+                                        <button class="btn active">Editor</button>
+                                        <button class="btn">Output</button>
+                                    </div>
+                                </div>
+                                <div class="editor-container">
+                                    <div class="text-editor">
+                                        <div class="line-numbering">
+                                            <span>1</span>
+                                        </div>
+                                        <textarea class="code-editor" contenteditable="false" >
+Hello 
+Coba lakukan ini!
+Terima kasih
+Hahah
+terpusat1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</textarea>
+                                    </div>
+                                </div>
+                                <div class="code-editor-footer">
+                                    <button class="btn" id="copy-code"><i class="uil uil-copy"></i>Copy</button>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                    <!-- You can add any sections below here as you want. -->
+                    <div class="section-3">
+                        <h1>(Beta) Mode baca</h1>
+                        <p>Merasa terganggu dengan artikel yang banyak iklannya? <b>Mode Baca jawabannya!</b> Dengan fitur ini, tampilan header dan iklan akan disembunyikan sehingga Anda bisa fokus membaca artikel tanpa terganggu iklan (hanya tersedia untuk pengguna terdaftar). <br> <br> <img class="article-image-container" src="" /></p>
+                    </div>
+                    <div class="section-4">
+                        <h1>(Beta) Ubah warna aksen dan tema situs dengan mudah! </h1>
+                        <p>Bosan dengan tema terang atau gelap dengan warna aksen biru saja? Sekarang, Anda dapat <b>mengubah warna aksen dan tema situs dengan banyak pilihan!</b> Kini keyzarichi.org mendukung 4 tema, yaitu <b>Terang</b>, <b>Gelap</b>, <b>AMOLED</b>, dan <b>Sepia</b> dengan 7 pilihan warna, mulai dari <b>Red Peach</b>, <b>Comfort Green</b>, hingga <b>Orange Juice</b>! <br> <br> <img class="article-image-container" src="" /></p>
+                    </div>
+                    <div class="section-3">
+                        <h1>(Beta) Mode baca</h1>
+                        <p>Merasa terganggu dengan artikel yang banyak iklannya? <b>Mode Baca jawabannya!</b> Dengan fitur ini, tampilan header dan iklan akan disembunyikan sehingga Anda bisa fokus membaca artikel tanpa terganggu iklan (hanya tersedia untuk pengguna terdaftar). <br> <br> <img class="article-image-container" src="" /></p>
+                    </div>
+                </div>
+                <section>
+                    <h1>Jelajahi fitur lainnya</h1>
+                    <div class="flex-grid">
+                        <div class="cards">
+                            <div class="img">
+                                <img src="/assets/logo/richi.com_script.webp">
+                            </div>
+                            <div class="top-text">
+                                <div class="dev-name" translate="no">
+                                    Back to Top
+                                </div>
+                                <b>Fitur untuk kembali ke atas halaman jika sudah selesai membaca.</b>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="img">
+                                <img src="/assets/logo/rave_black.png" class="rave-logo">
+                            </div>
+                            <div class="top-text">
+                                <div class="dev-name" translate="no">
+                                    Pengaktifan Fitur Tersembunyi
+                                </div>
+                                <b>Memungkinkan pengguna beta untuk mengaktifkan fitur tersembunyi.</b>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </article>
+    </main>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8" />
+
+    <!-- SEO / Social -->
+    
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+    <meta name="theme-color" content="#F57327" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Manrope:wght@200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" />
+
+    <!-- ================= CSP ================= -->
+    <meta http-equiv="Content-Security-Policy"
+      content="
+        default-src 'self';
+        script-src
+          'self'
+          'unsafe-inline'
+          'unsafe-eval'
+          https:;
+        style-src
+          'self'
+          'unsafe-inline'
+          https:;
+        font-src
+          'self'
+          https:;
+        img-src
+          'self'
+          data:
+          https:;
+        object-src 'none';
+        base-uri 'none';
+      ">
+
+
+
+    <!-- ================= PERFORMANCE ================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- ================= STYLES ================= -->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css" />
+    <link rel="stylesheet" href="/frameworks/Rave v1.5/css/Rave_Next.css" />
+    <link rel="stylesheet" href="/frameworks/Rave v1.5/css/Rave_header_next.css" />
+    <link rel="stylesheet" href="/frameworks/Rave v1.5/css/Rave_footer_next.css" />
+
+    <!-- ================= SCRIPTS (ES MODULES) ================= -->
+    <script type="module" nonce="random123" src="/frameworks/Rave v1.5/js/Rave_header.js"></script>
+    <script type="module" nonce="random123" src="/frameworks/Rave v1.5/js/Rave.js"></script>
+    <script type="module" nonce="random123" src="/frameworks/Rave v1.5/js/Rave_footer.js"></script>
+    <script type="module" nonce="random123" src="/script.js"></script>
+    <script nonce="random123" type="module">
+        let imgs = document.querySelectorAll('.inline-caption img');
+        imgs.forEach(img => {
+            img.setAttribute('loading', 'lazy');
+            
+        })
+
+        // Initialize Rave framework
+        import {Rave} from "/frameworks/Rave v1.5/js/Rave.js";
+        const richi = Rave ? new Rave("Next 0.5 beta", "keyzarichi.org") : null;
+
+
+        const carousel = '.carousel';
+        const carouselItems = '.carousel-item';
+        const carouselPrev = '.carousel-prev';
+        const carouselNext = '.carousel-next';
+        const title = 'carousel-title';
+        const subtitle = 'carousel-subtitle';
+        const indicators = '.carousel-indicators';
+        const duration = 4000;
+
+        richi.createCarousel(carousel, carouselItems, carouselPrev, carouselNext, title, subtitle, indicators, duration);
+
+    </script>
+    <title></title>
+</head>
+<body data-title="Artikel Untuk Anda">
+    <header></header>
+    <main class="padding-left">
+        <section class="section desc">
+            <div class="carousel-container">
+                    <div class="carousel-header">
+                        <h1 data-lang="home">Beranda</h1>
+                    </div>
+                    <div class="carousel">
+                        <div class="carousel-item" data-title="Keyza Richi Beta Preview 7 - 2025" data-subtitle="Lihat apa fitur dan tampilan yang baru dalam versi web ini.">
+                            <img src="/assets/logo/richi.com_script.webp" fetchpriority="low" alt="gambar 2" style="object-fit: scale-down;">
+                        </div>
+                        <div class="carousel-item" data-title="Microsoft sebentar lagi akan mengakhiri dukungan Windows 10." data-subtitle="Ini adalah subjudul gambar 3">
+                            <img src="/assets/image/nathania_anneta/Nia_banner.webp" fetchpriority="low" alt="gambar 3">
+                        </div>
+                    </div>
+                    <button class="btn carousel-prev"><i class="uil uil-arrow-left"></i></button>
+                    <button class="btn carousel-next"><i class="uil uil-arrow-right"></i></button>
+                    <div class="carousel-indicators"></div>
+                    <div class="carousel-caption">
+                        <span class="news-type foryou"></span>
+                        <script>
+                            const newsTypes = document.querySelectorAll('.news-type');
+
+                            newsTypes.forEach(newsType => {
+                                if (newsType.classList.contains('foryou')) {
+                                    newsType.innerHTML = 'Untuk Anda';
+                                } else if (newsType.classList.contains('trending')) {
+                                    newsType.innerHTML = 'Sedang tren';
+                                } else {
+                                    newsType.innerHTML = 'Acak';
+                                }
+                            })
+                        </script>
+                        <h3 id="carousel-title">Keyza Richi Beta Preview 7 - 2025</h3>
+                        <p id="carousel-subtitle">Lihat apa fitur dan tampilan yang baru dalam versi web ini.</p>
+                        <button class="btn see-more"><i class="uil uil-arrow-right"></i><span data-lang="readmore">Baca selengkapnya</span></button>
+                    </div>
+                </div>
+            <div class="section-content" style="margin: 1em 0em;">
+                <div class="flex">
+                <div class="cards popular">
+                    <div class="card-header">
+                        <span class="labelTag">Paling disukai</span>
+                        <img class="card-image" src="/assets/image/banner/pexels-fotoaibe-1571458.jpg" alt="Desain Interior" />
+                    </div>
+                    <div class="card-desc">
+                        <h2>Desain Interior</h2>
+                        <div class="card-info">
+                            <p>Desain interior yang menghadirkan harmoni antara estetika dan fungsi, menciptakan ruang nyaman sekaligus berkarakter.</p>
+                            <span class="price-tag">Rp 50.000/orang</span>
+                            
+                        </div>
+                    </div>
+                    <div class="card-btns">
+                        <button class="btn large">Gabung</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-header">
+                        <img class="card-image" src="/assets/image/banner/pexels-picjumbo-com-55570-196645 (1).jpg" alt="Desain Grafis" />
+                    </div>
+                    <div class="card-desc">
+                        <h2>Desain Grafis</h2>
+                        <div class="card-info">
+                            <p>Desain grafis menciptakan aplikasi atau web yang nyaman dipandang dengan fungsionalitas yang jelas di setiap sisinya.</p>
+                            <span class="price-tag">Rp 110.000/orang</span>
+                        </div>
+                    </div>
+                    <div class="card-btns">
+                        <button class="btn large">Gabung</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer></footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* 
+    styles.css
+    © 2025 Keyza Richi, licensed under the Yuuki and Yuika Project
+
+    CATATAN:
+    Ini adalah file gaya CSS utama untuk modifikasi layout elemen yang sudah tersedia di file CSS Rave, biasanya agar responsif dengan ukuran layar, menambahkan efek, atau perubahan lainnya.
+*/
+
+@font-face {
+    font-family: 'Manrope', sans-serif;
+    src: url('/assets/Manrope-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 400 800;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Bad Script', cursive;
+    src: url('/assets/BadScript-Regular.ttf') format('truetype');
+    font-weight: 100 400 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Urbanist', sans-serif;
+    src: url('/assets/Urbanist-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 400 800;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open-Dyslexic', sans-serif;
+    src: url('/assets/OpenDyslexic-Regular.otf') format('opentype');
+    font-display: swap;
+}
+
+.btn {
+    font-family: Manrope, sans-serif;
+}
+p, a {
+    font-family: Manrope, sans-serif;
+}
+.highlight {
+    background: linear-gradient(140deg, var(--primary-color) 35%, rgb(241, 241, 241), rgb(241, 241, 241));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-emphasis-color: transparent;
+}
+
+.text-container {
+    margin: 20px 0px 10px 0 !important;
+    flex-direction: row ;
+    gap: 0 !important;
+    width: 100%;
+    flex-wrap: nowrap !important;
+}
+#search-course-hero {
+    position: relative;
+    left: 0em;
+    font-size: 1em;
+    background-color: rgba(39, 39, 39, 0.5) !important;
+    backdrop-filter: blur(15px);
+    min-width: 60% !important;
+    min-height: 60px !important;
+}
+.search-buttons {
+    position: absolute;
+    right: 21%;
+    box-sizing: initial;
+    min-width: 0px !important;
+}
+.search-buttons .searchBtn {
+    position: relative;
+    right: 0 !important;
+    margin: 0;
+    font-size: 1.6em;
+}
+#search-btn {
+    background: linear-gradient(110deg, var(--primary-color), var(--primary-color), rgb(200, 200, 200));
+    margin-left: -12px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-emphasis-color: transparent;
+}
+.label-by-richi-ai {
+    color: rgb(200, 200, 200);
+    text-shadow: 0px 1px 5px rgb(8, 8, 8);
+}
+#gemini-prompt {
+    color: white;
+}
+@media (max-width: 768px) {
+    #search-course-hero {
+        min-width: 100% !important;
+    }
+    .search-buttons {
+        gap: 10px !important;
+        right: 11%;
+    }
+    .people.new {
+        box-shadow: none !important;
+        filter: none;
+    }
+    dialog {
+        animation: fadeIn .5s;
+    }
+}
+.float-message {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    background-color: rgba(211, 123, 23, 0.719);
+    color: inherit;
+    font-family: Manrope, sans-serif;
+    z-index: -1;
+    animation: fadeInOut 8s ease-in-out forwards;
+}

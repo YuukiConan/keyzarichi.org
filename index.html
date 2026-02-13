@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+
+    <!-- SEO / Social -->
+    <meta property="og:title" content="richi - Asisten desain digital untuk Anda." />
+    <meta property="og:description" content="richi adalah asisten desain digital yang membantu Anda menciptakan desain interior, desain grafis, dan model fashion yang indah dan fungsional." />
+    <meta name="description" content="richi adalah asisten desain digital yang membantu Anda menciptakan desain interior, desain grafis, dan model fashion yang indah dan fungsional." />
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+    <meta name="theme-color" content="#F57327" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Manrope:wght@200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" />
+
+    <!-- ================= CSP ================= -->
+    <meta http-equiv="Content-Security-Policy"
+      content="
+        default-src 'self';
+        script-src
+          'self'
+          'unsafe-inline'
+          'unsafe-eval'
+          https:;
+        style-src
+          'self'
+          'unsafe-inline'
+          https:;
+        font-src
+          'self'
+          https:;
+        img-src
+          'self'
+          data:
+          https:;
+        object-src 'none';
+        base-uri 'none';
+      ">
+
+
+
+    <!-- ================= PERFORMANCE ================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- ================= STYLES ================= -->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css" />
+    <link rel="stylesheet" href="/frameworks/Rave v1.5/css/Rave_Next.css" />
+    <link rel="stylesheet" href="/frameworks/Rave v1.5/css/Rave_header_next.css" />
+    <link rel="stylesheet" href="/frameworks/Rave v1.5/css/Rave_footer_next.css" />
+
+    <!-- ================= SCRIPTS (ES MODULES) ================= -->
+    <script type="module" nonce="random123" src="/frameworks/Rave v1.5/js/Rave_header.js"></script>
+    <script type="module" nonce="random123" src="/frameworks/Rave v1.5/js/Rave.js"></script>
+    <script type="module" nonce="random123" src="/frameworks/Rave v1.5/js/Rave_footer.js"></script>
+    <script type="module" nonce="random123" src="/js/indexScript.js"></script>
+    <script type="module" nonce="random123" src="/script.js"></script>
+    <title>richi - Asisten Desain untuk Anda</title>
+</head>
+<dialog id="myDialog">
+    <div class="title">
+        <h1>Ini adalah versi beta keyzarichi.org</h1>
+    </div>
+    <div class="content">
+        <p>Build keyzarichi.org (alias "Keyza Richi Website") ini tidak resmi dan mungkin memiliki bug atau fitur yang belum diselesaikan. Dengan mengklik "Close", Anda setuju dengan <a href="/privacy_policy.html" tabindex="-1">Kebijakan Privasi</a> dan <a href="/terms.html">Ketentuan Layanan</a> Keyza Richi.</p>
+    </div>
+    <div class="flex nowrap">
+        <input type="checkbox" aria-label="Don't show this message again checkbox" class="checkbox" id="disable-early-message" />
+        <label for="disable-early-message" aria-label="Don't show this message again label">Jangan tampilkan dialog ini lagi.</label>
+    </div>
+    <div class="dialog-btns">
+        <button id="close" aria-label="Close dialog" class="btn accent">Close</button>
+    </div>
+</dialog>
+<body >
+    <header></header>
+    <main>
+        <section class="section intro" id="home">
+            <section class="hero">
+                <video autoplay loop preload="auto" class="rotated-video" muted>
+                    <source src="/assets/video/richi-video-intro-fashion-1.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <div class="hero-overlay"></div>
+                <div class="hero-section">
+                    <div class="hero-caption">
+                        <h1 class="role" data-lang="welcome">Tingkatkan Ruang Anda dengan <span class="highlight">Desain Khas Richi!</span></h1>
+                        <p>Dengan ratusan kursus desain interior, fashion, dan grafis/UX yang tersedia, ciptakan kreativitas yang tak terbatas dan tingkatkan kualitas hidup dan kepercayaan diri Anda.</p>
+                        
+                        <div class="flex text-container">
+                            <input type="search" id="search-course-hero" placeholder="Cari ide atau kursus desain..." aria-label="Search courses..." />
+                            <div class="flex search-buttons">
+                                <button class="searchBtn" id="gemini-prompt"><i class="lni lni-gemini"> </i></button>
+                                <button class="searchBtn" id="search-btn"><i class="lni lni-search-2"> </i></button>
+                            </div>
+                        </div>
+                        <span class="flex label-by-richi-ai"><i class="lni lni-gemini"></i><span>Didukung oleh Richi AI</span></span>
+                    </div>
+                    <div class="statistics">
+                        <div class="review">
+                            <h2>4.88<i class="lni lni-star-fat"></i></h2>
+                            <span>Rating layanan kami, menunjukkan kepuasan pelanggan kami yang tinggi.</span>
+                        </div>
+                        <div class="review">
+                            <h2>200+</h2>
+                            <span>Kursus desain yang siap mendarat untuk Anda.</span>
+                        </div>
+                        <div class="review">
+                            <h2>5.000+</h2>
+                            <span>Pelanggan layanan ini yang berasal dari Indonesia</span>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </section>
+        </section>
+        <section class="section desc">
+            <div class="section-content powered-by">
+                <h1>Didukung oleh</h1>
+                <div class="flex sponsor">
+                    <div class="sponsor-logo">
+                        <img alt="rave logo" src="/assets/logo/rave_black.webp" class="raveLogo">
+                    </div>
+                    <div class="sponsor-logo">
+                        <img alt="SMK Canda Bhirawa Pare logo" src="/assets/logo/Logo_SMK_CB_Pare.webp" class="smkCB">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section desc" id="about-me">
+            <div class="section-content">
+                <div class="flex-box rtl">
+                    <div class="img-container">
+                        <img class="img riley active" alt="Keyza Richi image 1" src="/assets/image/keyza_richi/richi_4.webp" />
+                        <img class="img riley" alt="Keyza Richi image 2" src="/assets/image/keyza_richi/richi_1.webp" />
+                        <img class="img riley" alt="Keyza Richi image 3"  src="/assets/image/keyza_richi/richi_2.webp" />
+                        <img class="img riley" alt="Keyza Richi image 4" src="/assets/image/keyza_richi/richi_3.webp" />
+                       
+                        
+                    </div>
+                    <script nonce="random123">
+                        const flexBox = document.querySelector('.flex-box.rtl .img-container')
+                        const images = flexBox.querySelectorAll('img.riley');
+                        let min = Math.ceil(3000);
+                        let max = Math.floor(5000);
+                        let imageDelay = Math.floor(Math.random() * (max - min + 1) + min);
+
+                        let currentIndex = 0;
+                        images[currentIndex].classList.add('active');
+
+                        setInterval(() => {
+                                
+                            images[currentIndex].classList.remove('active');
+                            images[currentIndex].style.zIndex = 0;
+
+                            currentIndex = (currentIndex + 1) % images.length;
+                            images[currentIndex].classList.add('active');
+                            images[currentIndex].style.zIndex = 1;
+                        }, imageDelay)
+                    </script>
+                    <div class="box-content">
+                        <div class="bio pageOne">
+                            <div class="box-biography">
+                                <h1>Tentang saya</h1>
+                                <br>
+                                <h3 class="name">
+                                    <span class="hideWords">
+                                        Keyza Medina Richi Sherlya Fanda  &bull;  <span class="alternate-name">Keyza Richi</span>
+                                    </span> 
+                                </h3>
+                            </div>
+                            <div class="flex two-sided">
+                                <div class="tree">
+                                    <ul class="tree-li">
+                                        <li><b>Nama panggilan</b> <br> Richi</li>
+                                        <li><b>Umur</b> <br> 16 tahun</li>
+                                        <li><b>Peran</b> <br> Model, desainer</li>
+                                        <li><b>Email</b> <br> keyzarichi@outlook.com</li>
+                                    </ul>
+                                </div>
+                                <div class="box-content-desc">
+                                    <p class="richi-bio">
+                                        Saya adalah <b>seorang siswi dan wakil ketua OSIS periode 2025/2026 di SMK Canda Bhirawa Pare</b> di jurusan DPIB (Desain Pemodelan dan Informasi Bangunan) yang berkontribusi besar di bidang <b>desain interior</b>, <b><i>modelling</i></b>, dan <b>fotogenik</b>, terutama seni batik.
+                                        
+                                    </p>
+                                    <div class="social-media">
+                                        <a href="https://instagram.com/richisherlyaa" target="_blank"><div class="link"><i class="lni lni-instagram"></i><span class="social-acc-name">richisherlyaa</span></div></a>
+                                        <a href="https://tiktok.com/@cherlyarici" target="_blank">
+                                            <div class="link">
+                                                <i class="lni lni-tiktok"></i> <span class="social-acc-name">cherlyarichi</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section desc">
+            <div class="section-header">
+                <h1 class="section-title">Mengapa kami ada?</h1>
+            </div>
+            <div class="section-content">
+                <div class="flex-box-container">
+                    <div class="modern-flex-box">
+                        <div class="flex-box-img mission">
+                            <i class="uil uil-rocket"></i>
+                        </div>
+                        <div class="flex-box-desc">
+                            <h1>Misi</h1>
+                            <p><b>Menghadirkan karya desain yang tidak hanya indah secara visual</b>, tapi juga <b>memiliki makna</b> sehingga memberikan pengalaman yang berbeda bagi orang yang melihat maupun menggunakannya.</p>
+                        </div>
+                    </div>
+                    <div class="modern-flex-box">
+                        <div class="flex-box-img vision">
+                            <i class="lni lni-eye"></i>
+                        </div>
+                        <div class="flex-box-desc">
+                            <h1>Visi</h1>
+                            <p> Baik dalam desain interior, desain grafis, atau model fashion, saya ingin menciptakan <b>keselarasan dan harmoni antara estetika, fungsi, dan identitas.</b></p>
+                        </div>
+                    </div>
+                    <div class="modern-flex-box">
+                        <div class="flex-box-img value">
+                            <i class="uil uil-balance-scale"></i>
+                        </div>
+                        <div class="flex-box-desc">
+                            <h1>Nilai</h1>
+                            <p>Bagi saya, desain adalah sebuah <i>magic</i>, yang mengutamakan bagaimana ruang, warna, tekstur, dan pola bisa memperkuat cerita, dan memperlihatkan karakter yang unik untuk setiap individu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section desc">
+            <div class="section-header">
+                <h1 class="section-title">Fitur utama</h1>
+                <p class="section-desc"></p>
+            </div>
+            <div class="section-content">
+                <div class="flex-box rtl">
+                    <div class="img-container">
+                        <img class="img " alt="Keyza Richi image 1" src="/assets/image/banner/pexels-fotoaibe-1571458.jpg" />
+                    </div>
+                    <div class="box-content">
+                        <div class="bio pageOne">
+                            <div class="box-biography">
+                                <div class="flex flex-box-number"><i class="uil uil-graduation-cap"></i><span>1</span></div>
+                                <h3 class="name">
+                                    Nikmati kursus tanpa iklan!
+                                </h3>
+                            </div>
+                            <div class="flex">
+                               <div class="box-content-desc">
+                                    <p>
+                                        "Tanpa distraksi, tanpa iklan mengganggu" merupakan prioritas kami. Nikmatilah ribuan konten kursus tanpa jeda iklan untuk meningkatkan produktivitas Anda.
+                                        
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section desc">
+            <div class="section-header">
+                <h1 class="section-title">Ulasan Pengguna</h1>
+                <p class="section-desc">Dicintai oleh ribuan pengguna di seluruh dunia</p>
+            </div>
+            <div class="rating-container">
+                <div class="rating-card">
+                    <div class="rating-star">
+                        <span class="rating-value">4.5</span>
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                        <span class="quarter-star">&starf;</span>
+                    </div>
+                    <div class="rating-desc">
+                        <p>Bagus banget richi.com! Awalnya saya hanya ingin cari inspirasi desain web untuk redesain portofolio saya, tetapi setelah menggunakan website ini, saya merasa wawasan saya tentang web bertambah pesat.</p>
+                    </div>
+                    <div class="reviewer-data">
+                        <img class="rating-pic" alt="Jessica Anastasya Oktavia" src="/assets/image/jessica_anastasya/jessica_anastasya.webp">
+                        <div class="reviewer">
+                            <h2 class="reviewer-name">Jessica Anastasya</h2>
+                            <p class="role">Desainer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rating-card">
+                    <div class="rating-star">
+                        <span class="rating-value">4.8</span>
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                        <span>&starf;</span>
+                        <span class="quarter-star">&starf;</span>
+                    </div>
+                    <div class="rating-desc">
+                        <p>Puas dengan layanan, akurasi kursus, dan video pembelajaran yang ada. Semangat terus tim richi.com!</p>
+                    </div>
+                    <div class="reviewer-data">
+                        <img class="rating-pic" alt="Hilda image" src="/assets/image/hilda.webp">
+                        <div class="reviewer">
+                            <h2 class="reviewer-name">Hilda Ifantri Natalia</h2>
+                            <p class="role">Desainer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="kolaborasi">
+            <div class="section-header">
+                <h1 class="section-title">Tim Kami</h1>
+                <p class="section-desc">Para ahli di balik kursus, desain, dan kolaborasi. Salam hangat dari kami!</p>
+                
+            </div>
+            <div class="section-content">
+                <div class="tab-container">
+                    <div class="tab-buttons">
+                        <button class="tab-button active" id="interior" onclick="showTab('interior')">Desain Interior</button>
+                        <button class="tab-button" id="fashion" onclick="showTab('fashion')">Desain Fashion</button>
+                        <button class="tab-button" id="graphics" nonce="random123" onclick="showTab('graphics')">Grafis dan UX</button>
+                    </div>
+                    <div class="tab-panel">
+                        <div class="tab-content active" id="interior-tab">
+                            <div class="pageType pageOne">
+                                <div class="people-container">
+                                    <div class="people legacy">
+                                        <span class="labelTag">Pemilik</span>
+                                        <div class="people-banner">
+                                            
+                                        </div>
+                                        <div class="people-bio" data-people="richi">
+                                            <div class="people-img"><img src="/assets/image/keyza_richi/richi_lookingatyou.jpg" /></div>
+                                            <div class="name">
+                                                <h2></h2>
+                                                <span></span>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                        <div class="people-btns">
+                                            <div class="social-media">
+                                                <a href="https://instagram.com/richisherlyaa" target="_blank" data-tooltip="richisherlyaa"><div class="link"><i class="lni lni-instagram"></i><span>richisherlyaa</span></div></a>
+                                                <a href="https://tiktok.com/@cherlyarici" target="_blank" data-tooltip="cherlyarici"><div class="link"><i class="lni lni-tiktok"></i><span>cherlyarici</span></div></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="people">
+                                        <div class="people-banner">
+                                            
+                                        </div>
+                                        <div class="people-bio" data-people="yuuki">
+                                            <div class="people-img"><img src="assets/logo/YuukiC.com_new logo_big.webp" /></div>
+                                            <div class="name">
+                                                <h2></h2>
+                                                <span></span>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                        <div class="people-btns">
+                                            <div class="social-media">
+                                                <a href="https://instagram.com/_yuukic" target="_blank"><div class="link" data-tooltip="_yuukic"><i class="lni lni-instagram"></i><span></span></div></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="people">
+                                        <div class="people-banner" >
+                                            
+                                        </div>
+                                        <div class="people-bio" data-people="zepta">
+                                            <div class="people-img">
+                                                <img src="/assets/image/zepta/Zepta.webp" />
+                                            </div>
+                                            <div class="name">
+                                                <h2></h2>
+                                                <span></span>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                        <div class="people-btns">
+                                            <div class="social-media">
+                                                <a href="https://instagram.com/__zpramdhn" target="_blank" data-tooltip="__zpramdhn"><div class="link"><i class="lni lni-instagram"></i><span>__zpramdhn</span></div></a>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <div class="people">
+                                        <div class="people-banner" >
+                                            
+                                        </div>
+                                        <div class="people-bio" data-people="titus">
+                                            <div class="people-img">
+                                                <img src="/assets/image/titus/titus.jpg" />
+                                            </div>
+                                            <div class="name">
+                                                <h2></h2>
+                                                <span></span>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                        <div class="people-btns">
+                                            <div class="social-media">
+                                                <a href="https://www.instagram.com/tituspetraaz/" target="_blank" data-tooltip="tituspetraaz"><div class="link"><i class="lni lni-instagram"></i><span></span></div></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="people">
+                                        <div class="people-banner" >
+                                            
+                                        </div>
+                                        <div class="people-bio" data-people="rikki">
+                                            <div class="people-img">
+                                                <img src="/assets/image/rikki/rikki.webp" />
+                                            </div>
+                                            <div class="name">
+                                                <h2></h2>
+                                                <span></span>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                        <div class="people-btns">
+                                            <div class="social-media">
+                                                <a href="https://instagram.com/rikkitantryasulaimn" target="_blank" data-tooltip="rikkitantryasulaimn"><div class="link"><i class="lni lni-instagram"></i><span>rikkitantryasulaimn</span></div></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="people">
+                                        <div class="people-banner centered" >
+                                            <img src="/assets/image/keisya_ayu/Keke_2.webp" />
+                                        </div>
+                                        <div class="people-bio" data-people="keke">
+                                            <div class="people-img">
+                                                <img src="/assets/image/keisya_ayu/Keke_1.webp" />
+                                            </div>
+                                            <div class="name">
+                                                <h2></h2>
+                                                <span></span>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                        <div class="people-btns">
+                                            <div class="social-media">
+                                                <a href="https://www.instagram.com/kkekeeeeeeeewwwww/" target="_blank" data-tooltip="kkekeeeeeeeewwwww"><div class="link"><i class="lni lni-instagram"></i><i class="private"></i><span></span></div></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="people">
+                                        <div class="people-banner"></div>
+                                        <div class="people-bio" data-people="yuika">
+                                            <div class="people-img">
+                                                <img src="/assets/image/yuika_izumi/yuika.webp" />
+                                            </div>
+                                            <div class="name">
+                                                <h2></h2>
+                                                <span></span>
+                                            </div>
+                                            <p></p>
+                                        </div>
+                                        <div class="people-btns">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pageType pageTwo hidden">
+                                <div class="people-container" >
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="fashion-tab">
+                            <div class="people-container">
+                                <div class="people">
+                                    <span class="labelTag" data-added="2026-01-02T08:00:00Z">Baru</span>
+                                    <div class="people-banner centered" >
+                                        <img src="/assets/image/angelina_petra/angelinapetraa_1764807301696.webp" />
+                                    </div>
+                                    <div class="people-bio" data-people="petra">
+                                        <div class="people-img">
+                                            <img src="/assets/image/angelina_petra/angelinapetraa_1764807506718.webp" />
+                                        </div>
+                                        <div class="name">
+                                            <h2></h2>
+                                            <span></span>
+                                        </div>
+                                        <p></p>
+                                    </div>
+                                    <div class="people-btns">
+                                        <div class="social-media">
+                                            <a href="https://instagram.com/angelinapetraa" target="_blank" data-tooltip="angelinapetraa"><div class="link"><i class="lni lni-instagram"></i><i class="verified"></i><span></span></div></a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="people">
+                                    <span class="labelTag" data-added="2026-01-02T08:00:00Z">Populer</span>
+                                    <div class="people-banner centered" >
+                                        <img src="/assets/image/nathania_anneta/Nia_banner_new.jpeg" />
+                                    </div>
+                                    <div class="people-bio" data-people="anneta">
+                                        <div class="people-img">
+                                            <img src="/assets/image/nathania_anneta/Nia_avatar.webp" />
+                                        </div>
+                                        <div class="name">
+                                            <h2></h2>
+                                            <span></span>
+                                        </div>
+                                        <p></p>
+                                    </div>
+                                    <div class="people-btns">
+                                        <div class="social-media">
+                                            <a href="https://instagram.com/niaapayy" target="_blank" data-tooltip="niaapayy"><div class="link"><i class="lni lni-instagram"></i><i class="private"></i><span>niaapayy</span></div></a>
+                                            <a href="https://instagram.com/itswayyp" target="_blank" data-tooltip="itswayyp"> <div class="link"> <i class="lni lni-instagram"></i><i class="private"></i><span>itswayyp</span></div></a>
+                                            <a href="https://tiktok.com/@netaaawww0" target="_blank" data-tooltip="netaaawww0"> <div class="link"> <i class="lni lni-tiktok"></i><span>netaaawww0</span></div></a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="people">
+                                    <div class="people-banner centered-top">
+                                        <img src="/assets/image/jessica_noleen/JessicaOSIS1.webp" />
+                                    </div>
+                                    <div class="people-bio" data-people="jessica">
+                                        <div class="people-img">
+                                            <img src="/assets/image/jessica_noleen/Jessica.webp" />
+                                        </div>
+                                        <div class="name">
+                                            <h2></h2>
+                                            <span></span>
+                                        </div>
+                                        <p></p>
+                                    </div>
+                                    <div class="people-btns">
+                                        <div class="social-media">
+                                            <a href="https://instagram.com/2615.jessica" target="_blank" data-tooltip="2615.jessica"><div class="link"><i class="lni lni-instagram"></i><i class="private"></i><span></span></div></a>
+                                            <a href="https://tiktok.com/@jessican_jes" target="_blank" data-tooltip="jessican_jes"><div class="link"><i class="lni lni-tiktok"></i><i class="private"></i><span></span></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="people">
+                                    <span class="labelTag" data-added="2026-01-24T10:00:00Z">Baru</span>
+                                    <div class="people-banner">
+                                        
+                                    </div>
+                                    <div class="people-bio" data-people="rossa">
+                                        <div class="people-img">
+                                            <img src="/assets/image/angela_rossa/rossa.jpg" />
+                                        </div>
+                                        <div class="name">
+                                            <h2></h2>
+                                            <span></span>
+                                        </div>
+                                        <p></p>
+                                        
+                                    </div>
+                                    <div class="people-btns">
+                                        <div class="social-media">
+                                            <a href="https://instagram.com/rossaafa.10" target="_blank"><div class="link" data-tooltip="rossaafa.10"><i class="lni lni-instagram"></i><span>rossaafa.10</span></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="graphics-tab">
+                            <div class="people-container">
+                                <div class="people">
+                                    <div class="people-banner">
+                                        <img src="/assets/image/jessica_anastasya/jessica_anastasya_banner.webp" />
+                                    </div>
+                                    <div class="people-bio" data-people="anastasya">
+                                        <div class="people-img">
+                                            <img src="/assets/image/jessica_anastasya/jessica_anastasya.webp" />
+                                        </div>
+                                        <div class="name">
+                                            <h2></h2>
+                                            <span></span>
+                                        </div>
+                                        <p></p>
+                                        
+                                    </div>
+                                    <div class="people-btns">
+                                        <div class="social-media">
+                                            <a href="https://instagram.com/jeesxy_" target="_blank"><div class="link" data-tooltip="jeesxy_"><i class="lni lni-instagram"></i><i class="private"></i><span>jeesxy_</span></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="people">
+                                    <span class="labelTag" data-added="2026-01-16T11:30:00Z">Baru</span>
+                                    <div class="people-banner">
+                                        <img src="/assets/image/ercila/cila_banner.jpeg" />
+                                    </div>
+                                    <div class="people-bio" data-people="cila">
+                                        <div class="people-img">
+                                            <img src="/assets/image/ercila/Cila.jpg" />
+                                        </div>
+                                        <div class="name">
+                                            <h2></h2>
+                                            <span></span>
+                                        </div>
+                                        <p></p>
+                                        
+                                    </div>
+                                    <div class="people-btns">
+                                        <div class="social-media">
+                                            <a href="https://instagram.com/wa0_fless" target="_blank"><div class="link" data-tooltip="wa0_fless"><i class="lni lni-instagram"></i><span>wa0_fless</span></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="people">
+                                    <div class="people-banner centered">
+                                    <img src="/assets/image/yosia/Yosia_1.webp" />
+                                    </div>
+                                    <div class="people-bio" data-people="yosia">
+                                        <div class="people-img">
+                                            <img src="/assets/image/yosia/yosia.jpg" />
+                                        </div>
+                                        <div class="name">
+                                            <h2></h2>
+                                            <span></span>
+                                        </div>
+                                        <p></p>
+                                    </div>
+                                    <div class="people-btns">
+                                        <div class="social-media">
+                                            <a href="https://instagram.com/yosiaapratama_" target="_blank" data-tooltip="yosiaapratama_"><div class="link"><i class="lni lni-instagram"></i><i class="private"></i><span>yosiaapratama_</span></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="people">
+                                    <span class="labelTag" data-added="2026-01-25T10:00:00Z">Baru</span>
+                                    <div class="people-banner centered">
+                                        
+                                    </div>
+                                    <div class="people-bio" data-people="vino">
+                                        <div class="people-img">
+                                            <img src="/assets/image/suep/sueb.jpg" />
+                                        </div>
+                                        <div class="name">
+                                            <h2></h2>
+                                            <span></span>
+                                        </div>
+                                        <p></p>
+                                    </div>
+                                    <div class="people-btns">
+                                        <div class="social-media">
+                                            <a href="https://instagram.com/christoph_vin" target="_blank" data-tooltip="christoph_vin"><div class="link"><i class="lni lni-instagram"></i><i class="private"></i><span>christoph_vin</span></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="people">
+                                    <div class="people-banner" >
+                                        
+                                    </div>
+                                    <div class="people-bio" data-people="titus">
+                                        <div class="people-img">
+                                            <img src="/assets/image/titus/titus.jpg" />
+                                        </div>
+                                        <div class="name">
+                                            <h2></h2>
+                                            <span></span>
+                                        </div>
+                                        <p></p>
+                                    </div>
+                                    <div class="people-btns">
+                                        <div class="social-media">
+                                            <a href="https://www.instagram.com/tituspetraaz/" target="_blank" data-tooltip="tituspetraaz"><div class="link"><i class="lni lni-instagram"></i><span></span></div></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="section" id="explore">
+            <div class="section-header">
+                <h1 class="section-title">Jelajah</h1>
+                <p class="section-desc">Jelajahi seluruh bagian richi.com - mulai dari Galeri Richi, cerita developer, hingga framework Rave.</p>
+            </div>
+            <div class="flex-grids">
+                <div class="flex hidden">
+                    <div class="hideAndSeek selected">
+                        <div class="img">
+                            <img src="/assets/image/keyza_richi/richi2.jpg" />
+                        </div>
+                        <div class="caption">
+                            <span class="caption-title">Galeri Richi</span>
+                            <span class="caption-desc">Galeri Richi - lucu, imut namun dapat dimengerti.</span>
+                            <a href="/richigallery.html"><button class="btn medium blinking"><i class="lni lni-arrow-right"></i><span>Mulai jelajah!</span></button></a>
+                        </div>
+                    </div>
+                    <div class="hideAndSeek">
+                        <div class="img">
+                            <img src="/assets/image/nathania_anneta/Nia_grid.webp" />
+                        </div>
+                        <div class="caption">
+                            <span class="caption-title">It's Anneta!</span>
+                            <span class="caption-desc">Nathania Anneta, adalah asisten baru Yuuki sekaligus developer framework Rave.</span>
+                            <a href="#"><button class="btn medium blinking"><i class="lni lni-arrow-right"></i><span>Mulai jelajah!</span></button></a>
+                        </div>
+                    </div>
+                    <div class="hideAndSeek">
+                        <div class="img">
+                            <img src="/assets/logo/ravebeta_black.webp" class="raveLogo" alt="rave logo" />
+                        </div>
+                        <div class="caption">
+                            <span class="caption-title">Rave Beta</span>
+                            <span class="caption-desc">Framework penerus AirUI dengan UX, sumber daya, dan desain yang baru.</span>
+                            <a href="#"><button class="btn medium blinking"><i class="lni lni-arrow-right"></i><span>Mulai jelajah!</span></button></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-header">
+                <h1 class="section-title">Siap memulai?</h1>
+                <p class="section-desc">Pilih kursus yang Anda inginkan - kami siap membantu dengan puluhan pelajaran yang diperbarui setiap harinya!</p>
+            </div>
+            <div class="flex">
+                <div class="cards popular">
+                    <div class="card-header">
+                        <span class="labelTag">Paling disukai</span>
+                        <img class="card-image" src="/assets/image/banner/pexels-fotoaibe-1571458.jpg" alt="Desain Interior" />
+                    </div>
+                    <div class="card-desc">
+                        <h2>Desain Interior</h2>
+                        <div class="card-info">
+                            <p>Desain interior yang menghadirkan harmoni antara estetika dan fungsi, menciptakan ruang nyaman sekaligus berkarakter.</p>
+                            <span class="price-tag">Rp 50.000/orang</span>
+                            
+                        </div>
+                    </div>
+                    <div class="card-btns">
+                        <button class="btn large">Gabung</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-header">
+                        <img class="card-image" src="/assets/image/banner/pexels-picjumbo-com-55570-196645 (1).jpg" alt="Desain Grafis" />
+                    </div>
+                    <div class="card-desc">
+                        <h2>Desain Grafis</h2>
+                        <div class="card-info">
+                            <p>Desain grafis menciptakan aplikasi atau web yang nyaman dipandang dengan fungsionalitas yang jelas di setiap sisinya.</p>
+                            <span class="price-tag">Rp 110.000/orang</span>
+                        </div>
+                    </div>
+                    <div class="card-btns">
+                        <button class="btn large">Gabung</button>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <section class="section">
+            <div class="section-header">
+                <h1 class="section-title">FAQ</h1>
+                <p class="section-desc">Pertanyaan yang sering ditanyakan oleh pengguna</p>
+            </div>
+            <div class="flex settings">
+                <details class="item">
+                    <summary class="accordion-header">
+                        <div class="accordion-tab">
+                            <div>
+                                <h2 data-lang="faq-title-1">Apakah konten keyzarichi.org gratis?</h2>
+                            </div>
+                        </div>
+                    </summary>
+                    <div class="accordion-content">
+                        <p>Ya!</p>
+                    </div>
+                </details>
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>

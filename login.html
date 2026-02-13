@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+
+    <!-- SEO / Social -->
+    
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+    <meta name="theme-color" content="#F57327" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Manrope:wght@200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" />
+
+    <!-- ================= CSP ================= -->
+    <meta http-equiv="Content-Security-Policy"
+      content="
+        default-src 'self';
+        script-src
+          'self'
+          'unsafe-inline'
+          'unsafe-eval'
+          https:;
+        style-src
+          'self'
+          'unsafe-inline'
+          https:;
+        font-src
+          'self'
+          https:;
+        img-src
+          'self'
+          data:
+          https:;
+        object-src 'none';
+        base-uri 'none';
+      ">
+
+
+
+    <!-- ================= PERFORMANCE ================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- ================= STYLES ================= -->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css" />
+    <link rel="stylesheet" href="/frameworks/Rave v1.5/css/Rave_Next.css" />
+    <link rel="stylesheet" href="/frameworks/Rave v1.5/css/Rave_header_next.css" />
+    <link rel="stylesheet" href="/frameworks/Rave v1.5/css/Rave_footer_next.css" />
+    <link rel="stylesheet" href="/form.css" />
+
+    <!-- ================= SCRIPTS (ES MODULES) ================= -->
+    <script type="module" nonce="random123" src="/frameworks/Rave v1.5/js/Rave_header.js"></script>
+    <script type="module" nonce="random123" src="/frameworks/Rave v1.5/js/Rave.js"></script>
+    <script type="module" nonce="random123" src="/frameworks/Rave v1.5/js/Rave_footer.js"></script>
+    <script type="module" nonce="random123" src="/script.js"></script>
+    <title>Keyza Richi - Masuk</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="something">
+            <div class="login-header">
+                <h1>Selamat datang kembali!</h1>
+                <p>Mohon masukkan detail masuk Anda untuk login.</p>
+            </div>
+            <div class="login-content">
+                <form autocomplete="on" accept="POST GET">
+                    <div class="form-container">
+                        <div class="provider">
+                            <button class="btn"><i class="lni lni-google"></i></button>
+                            <button class="btn"><i class="lni lni-microsoft"></i></button>
+                            <button class="btn"><i class="lni lni-facebook"></i></button>
+                        </div>
+                        <hr> <br>
+                        <label for="username">Nama pengguna</label>
+                        <input type="text" id="username" autocomplete="name" required /> 
+                        <label for="password">Kata sandi</label>
+                        <input type="password" id="password" autocomplete="current-password" required />
+                        
+                        <a href="#" class="link">Lupa kata sandi?</a>
+                    </div>
+                    <input type="submit" class="btn accent" role="button">
+                </form>
+                <div class="form-footer">
+                    <span>Tidak memiliki akun? <a href="./signup.html">Daftar sekarang!</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

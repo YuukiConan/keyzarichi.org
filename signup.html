@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://cdn.lineicons.com/5.0/lineicons.css" onload="this.onload = null; this.rel='stylesheet';" />
+    <link rel="preload" as="style" href="./frameworks/Rave v1.5/Ravev1.3.css" onload="this.onload = null; this.rel='stylesheet';" />
+    <link rel="stylesheet" href="./form.css" />
+    <script defer type="module" src="./script.js"></script>
+    <script defer src="./elements/header.js"></script>
+    <script defer src="./elements/getFooter.js"></script>
+    <script defer type="module" src="./frameworks/Rave v1.5/Rave.js"></script>
+    <title>Keyza Richi - Masuk</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="something">
+            <div class="login-header">
+                
+                <h1>Hai, pengguna baru!</h1>
+            </div>
+            <div class="login-content">
+                <form autocomplete="on" accept="POST GET">
+                    <div class="form-container">
+                        <div class="provider">
+                            <button class="btn"><i class="lni lni-google"></i></button>
+                            <button class="btn"><i class="lni lni-microsoft"></i></button>
+                            <button class="btn"><i class="lni lni-facebook"></i></button>
+                        </div>
+                        <p class="other">Atau, daftar menggunakan:</p>
+                        <label for="username">Nama pengguna</label>
+                        <input type="text" id="username" autocomplete="name" required /> <br> <br>
+                        <label for="password">Kata sandi</label>
+                        <input type="password" id="password" autocomplete="new-password" required />
+                        <label for="confirm-password">Konfirmasi kata sandi</label>
+                        <input type="password" id="confirm-password" autocomplete="new-password" required />
+                        <br>
+                    </div>
+                    <input type="submit" class="btn accent" role="button">
+                </form>
+                <div class="form-footer">
+                    <span>Sudah memiliki akun? <a href="/login.html">Masuk sekarang!</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

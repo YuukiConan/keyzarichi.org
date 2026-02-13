@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/frameworks/Rave v1.5/css/Rave.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://cdn.lineicons.com/5.0/lineicons.css" onload="this.onload = null; this.rel='stylesheet';" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css"/>
+    <script type="module" defer src="/script.js" ></script>
+    <script defer type="module" src="/frameworks/Rave v1.5/js/Rave.js"></script>
+    <script>
+        let imgs = document.querySelectorAll('.inline-caption img');
+        imgs.forEach(img => {
+            img.setAttribute('loading', 'lazy');
+            
+        })
+    </script>
+    <title></title>
+</head>
+<body data-title="Galeri Richi">
+    <header></header>
+    <main>
+        <section class="section">
+            <div class="section-content">
+                <div class="inline-caption-title">
+                    <h1>Galeri Richi</h1>
+                </div>
+                <div class="inline-caption-container">
+                    <div class="inline-caption">
+                        <div class="inline-caption-item active blurred-content">
+                            <img src="/assets/image/keyza_richi/richiultah.webp" alt="">
+                            <div class="inline-caption-desc">
+                                <h1>Ulang tahun Richi - 3 Agustus 2025</h1>
+                                <p>Hari ini Richi berulang tahun! Semua anggota OSIS memberinya sebuah kotak donat dan mereka menuangkan tepung atau bedak ke tubuh Richi!</p>
+                                <h5 class="timestamp">20 September 2025 oleh <span class="accent">Richi</span> dan <span class="accent">@oscatuu</span></h5>
+                            </div>
+                        </div>
+                        <div class="inline-caption-item">
+                            <img src="/assets/image/keyza_richi/IMG_9334.webp" alt="">
+                            <div class="inline-caption-desc">
+                                <h1>Richi - MPLS CAWAMABA 2025</h1>
+                                <p>Richi, sebagai anggota OSIS menjadi MC pada acara Masa Pengenalan Lingkungan Sekolah (MPLS) dengan tema CAMAWABA 2025.</p>
+                                <h5 class="timestamp">5 September 2025 oleh <span class="accent">Richi</span></h5>
+                            </div>
+                        </div>
+                        <div class="inline-caption-item">
+                            <img src="/assets/image/keyza_richi/richiaward.jpg" alt="">
+                            <div class="inline-caption-desc">
+                                <h1>Richi sebagai nominator di Putra Putri Batik Kediri 2024</h1>
+                                <h5 class="timestamp">3 September 2025 oleh <span class="accent">Richi</span></h5>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="inline-caption-buttons">
+                        <button class="btn inline-caption-left" id="inline-caption-left"><i class="lni lni-chevron-left"></i></button>
+                        <button class="btn inline-caption-right" id="inline-caption-right"><i class="lni lni-chevron-left" style="transform: rotate(180deg);"></i></button>
+                    </div>
+                    <div class="inline-caption-indicators" id="indicators">
+                        
+                    </div>
+                </div>
+                
+        </section>
+        <footer></footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,127 @@
+[
+    {
+        "name": "Yuuki Conan",
+        "description": "Mantan pemain sepak bola Jepang-Indonesia &bull; programmer &bull; developer utama richi.com.",
+        "nickname": "Yuuki",
+        "id": "yuuki"
+    },
+    {
+        "name": "Keyza Medina Richi Sherlya Fanda",
+        "description": "Bintang utama web ini yang akan memandu Anda untuk membuat desain interior Anda menjadi lebih indah dan kreatif.",
+        "nickname": "Richi",
+        "id": "richi"
+    },
+    {
+        "name": "Jessica Noleen Alka",
+        "description": "Mantan pemain sepak bola untuk 11 Girls F.C., produser musik, dan asisten developer richi.com di bagian server.",
+        "nickname": "Jessica",
+        "id": "jessica",
+        "aliases": "jessie m wolen"
+    },
+    {
+        "name": "Keisya Ayu Audora Salsabela",
+        "description": "Atlet bulutangkis &bull; mantan developer keyzarichi.org",
+        "nickname": "Keke",
+        "id": "keke",
+        "instagram": [
+            "niaapayy",
+            "itswayyp"
+        ],
+        "tiktok": ""
+    },
+    {
+        "name": "Yuika Izumi (泉ゆいか)",
+        "description": "Programmer asal Jepang &bull; Mantan developer keyzarichi.org <br><br>Ia dikenal sebagai sosok romantis yang memiliki kepribadian posesif namun penuh kasih sayang.",
+        "nickname": "Yuika",
+        "id": "yuika",
+        "instagram": [
+            
+        ],
+        "tiktok": ""
+    },
+    {
+        "name": "Jessica Anastasya Oktafiana",
+        "description": "Koordinator OSIS bersama Richi <br><br>Jessica juga merupakan anggota Pramuka dan Pasbhirawa di SMK Canda Bhirawa Pare.",
+        "nickname": "Jessica &bull; Jess &bull; Jessi",
+        "id": "anastasya",
+        "instagram": [
+            "jeesxy_"
+        ],
+        "tiktok": ""
+    },
+    {
+        "name": "Yosia Adria Pratama",
+        "description": "Mentor Forum Anak Kab. Kediri &bull; web developer<br><br>Yosia sering berkolaborasi dengan Richi di acara tertentu, seperti sebagai MC MPLS atau fashion show.",
+        "nickname": "Yosia",
+        "id": "yosia",
+        "instagram": [
+            "yosiaapratama_"
+        ],
+        "tiktok": ""
+    },
+    {
+        "name": "Nathania Anneta Wayak Payong",
+        "description": "Asisten developer baru Yuuki &bull; aktris &bull; model <br><br>Nia sering membantu Yuuki dalam menguji fitur-fitur baru di richi.com sebelum dirilis ke publik.",
+        "nickname": "Nia &bull; Neta",
+        "id": "anneta",
+        "aliases": "It's Anneta!",
+        "instagram": [
+            "niaapayy",
+            "itswayyp"
+        ],
+        "tiktok": ""
+    },
+    {
+        "name": "Angelina Petra",
+        "description": "Influencer &bull; model <br><br>Kakak Nathania Anneta. Ia 8-9 tahun lebih tua dari Nia, namun ia justru suka berpenampilan sedikit terbuka di Instagramnya.",
+        "nickname": "Angel &bull; Angelina",
+        "id": "petra",
+        "aliases": ""
+    },
+    {
+        "name": "Titus Petra Mesias",
+        "description": "Anggota OSIS <br><br>Titus sesekali pernah menjadi MC bersama Richi saat <i>classmeet</i> futsal di kegiatan tengah semester.",
+        "nickname": "Titus &bull; Titud",
+        "id": "titus"
+    },
+    {
+        "name": "Rikki Tantriya Sulaiman",
+        "description": "Anggota OSIS yang satu angkatan dengan Richi. Sepertinya ia jarang terlihat dari luar.",
+        "nickname": "Rikki",
+        "id": "rikki"
+    },
+    {
+        "name": "Zepta Ramadhan",
+        "description": "Desainer <br><br>Diduga merupakan pacar Richi.",
+        "nickname": "Zepta",
+        "id": "zepta"
+    }, 
+    {
+        "name": "Ercila Mai Asherayuku",
+        "description": "Desainer grafis <br><br>Ahli dalam seni grafis, Cila berhasil meraih prestasi di sekolahnya ketika memamerkan seni grafis anime pada tahun 2021.",
+        "nickname": "Ercila &bull; Cila",
+        "id": "cila",
+        "other_name": "",
+        "instagram": [
+            "wa0_fless"
+        ]
+    },
+    {
+        "name": "Fraocta Angela Rossa",
+        "description": "Model <br><br>Rossa adalah ketua kostum dan fotogenik yang berhasil menjuarai Putri Kebaya pada tahun 2022, tampil di <i>catwalk</i> Kota Kediri, dan fotogenik",
+        "nickname": "Rossa",
+        "id": "rossa",
+        "instagram": [
+            "rossaafa.10"
+        ]
+    },
+    {
+        "name": "Nelvino Harven",
+        "description": "Vino adalah anggota tech.xyz yang berkontribusi di keyzarichi.org untuk desain grafis aplikasi dan video TikTok.",
+        "nickname": "Vino, Sueb, Suep",
+        "id": "vino",
+        "instagram": [
+            "christoph_vin"
+        ]
+    }
+]

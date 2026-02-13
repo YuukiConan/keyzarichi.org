@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+
+    <!-- SEO / Social -->
+    
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+    <meta name="theme-color" content="#F57327" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Manrope:wght@200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" />
+
+    <!-- ================= CSP ================= -->
+    <meta http-equiv="Content-Security-Policy"
+      content="
+        default-src 'self';
+        script-src
+          'self'
+          'unsafe-inline'
+          'unsafe-eval'
+          https:;
+        style-src
+          'self'
+          'unsafe-inline'
+          https:;
+        font-src
+          'self'
+          https:;
+        img-src
+          'self'
+          data:
+          https:;
+        object-src 'none';
+        base-uri 'none';
+      ">
+
+
+
+    <!-- ================= PERFORMANCE ================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- ================= STYLES ================= -->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css" />
+    <link rel="stylesheet" href="/frameworks/Rave v1.5/css/Rave_Next.css" />
+    <link rel="stylesheet" href="/frameworks/Rave v1.5/css/Rave_header_next.css" />
+    <link rel="stylesheet" href="/frameworks/Rave v1.5/css/Rave_footer_next.css" />
+
+    <!-- ================= SCRIPTS (ES MODULES) ================= -->
+    <script type="module" nonce="random123" src="/frameworks/Rave v1.5/js/Rave_header.js"></script>
+    <script type="module" nonce="random123" src="/frameworks/Rave v1.5/js/Rave.js"></script>
+    <script type="module" nonce="random123" src="/frameworks/Rave v1.5/js/Rave_footer.js"></script>
+    <script type="module" nonce="random123" src="/script.js"></script>
+    <script nonce="random123">
+        let imgs = document.querySelectorAll('.inline-caption img');
+        imgs.forEach(img => {
+            img.setAttribute('loading', 'lazy');
+            
+        })
+    </script>
+    <title></title>
+</head>
+<body data-title="Kursus">
+    <header></header>
+    <main class="padding-left">
+    <style>
+        @media (max-width: 768px) { main { margin-left: 0 !important; } }
+    </style>
+        <section class="section desc">
+            <div class="section-header">
+                <h1 class="section-title left">Kursus <span class="beta uppercase">Beta</span></h1>
+                <p class="section-desc">Jelajahi kursus yang menarik dari para desainer di sini</p>
+            </div>
+            <div class="section-content" style="margin: 1em 6em;">
+                <div class="container">
+                    <h1 class="text-center">Richi AI</h1>
+                    <form class="content">
+                        <input type="text" id="richi-ai-textbox" placeholder="Masukkan prompt Anda di sini" autocomplete="on" autocapitalize required >
+                        <button class="btn" type="submit">Kirim</button>
+                    </form>
+                </div>
+                <div class="flex">
+                <div class="cards popular">
+                    <div class="card-header">
+                        <span class="labelTag">Paling disukai</span>
+                        <img class="card-image" src="/assets/image/banner/pexels-fotoaibe-1571458.jpg" alt="Desain Interior" />
+                    </div>
+                    <div class="card-desc">
+                        <h2>Desain Interior</h2>
+                        <div class="card-info">
+                            <p>Desain interior yang menghadirkan harmoni antara estetika dan fungsi, menciptakan ruang nyaman sekaligus berkarakter.</p>
+                            <span class="price-tag">Rp 50.000/orang</span>
+                            
+                        </div>
+                    </div>
+                    <div class="card-btns">
+                        <button class="btn large">Gabung</button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card-header">
+                        <img class="card-image" src="/assets/image/banner/pexels-picjumbo-com-55570-196645 (1).jpg" alt="Desain Grafis" />
+                    </div>
+                    <div class="card-desc">
+                        <h2>Desain Grafis</h2>
+                        <div class="card-info">
+                            <p>Desain grafis menciptakan aplikasi atau web yang nyaman dipandang dengan fungsionalitas yang jelas di setiap sisinya.</p>
+                            <span class="price-tag">Rp 110.000/orang</span>
+                        </div>
+                    </div>
+                    <div class="card-btns">
+                        <button class="btn large">Gabung</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer></footer>
+    </main>
+</body>
+</html>
