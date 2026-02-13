@@ -1,4 +1,4 @@
-fetch('/elements/footer.html')
+fetch('elements/footer.html')
     .then(responsefooter => responsefooter.text())
     .then(footerData => {
         document.querySelector('footer').innerHTML = footerData;
