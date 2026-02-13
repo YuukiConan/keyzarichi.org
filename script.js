@@ -1,23 +1,23 @@
 // Initialize Rave framework
-import {Rave, Security, CustomError} from "./frameworks/Rave v1.5/js/Rave.js";
+import {Rave, Security, CustomError} from "frameworks/Rave v1.5/js/Rave.js";
 
 const richi = Rave ? new Rave("Next 0.5 beta", "keyzarichi.org") : null;
 const security = Rave ? new Security("1.1", "Keyza Richi and Jessica Noleen Alka") : null;
 const customError = Rave ? new CustomError() : null;
 
-if (window.location.href === '/settings.html') {
+if (window.location.href === 'settings.html') {
 richi.setHeadTagType('script', [
-    "/settings.js",
-    "/js/lang.js",
-    "/frameworks/Rave v1.5/js/Rave_header.js",
-    "/frameworks/Rave v1.5/js/Rave_footer.js",
+    "settings.js",
+    "js/lang.js",
+    "frameworks/Rave v1.5/js/Rave_header.js",
+    "frameworks/Rave v1.5/js/Rave_footer.js",
 ]);
 }
 else {
 richi.setHeadTagType('script', [
-    "/js/lang.js",
-    "/frameworks/Rave v1.5/js/Rave_header.js",
-    "/frameworks/Rave v1.5/js/Rave_footer.js",
+    "js/lang.js",
+    "frameworks/Rave v1.5/js/Rave_header.js",
+    "frameworks/Rave v1.5/js/Rave_footer.js",
 ]);
 }
 
