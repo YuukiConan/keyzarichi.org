@@ -1,6 +1,6 @@
-let url = '/elements/header.html';
-if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
-    url = '/elements/header_new.html';
+let url = 'elements/header.html';
+if (window.location.pathname === 'index.html' || window.location.pathname === '/') {
+    url = 'elements/header_new.html';
 }
 
 fetch(url).then(response => response.text()).then(html => {
