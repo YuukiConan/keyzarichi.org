@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
-    richi.setHeadTagType("icon", "/assets/logo/richi.com_scriptsimple.webp");
+    richi.setHeadTagType("icon", "assets/logo/richi.com_scriptsimple.webp");
     richi.setHeadTagType('stylesheet', [
         '/styles_new.css',
         'https://cdn.lineicons.com/5.0/lineicons.css'
